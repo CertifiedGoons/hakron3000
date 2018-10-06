@@ -1,6 +1,7 @@
 import cv2
 import urllib 
 import numpy as np
+import urllib.request
 
 stream=urllib.urlopen('http://camera.accidentallycoded.com/video')
 bytes=''
