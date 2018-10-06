@@ -1,7 +1,6 @@
 import cv2
 import urllib 
 import numpy as np
-import urllib.request
 
 stream=urllib.urlopen('http://camera.accidentallycoded.com/video')
 bytes=''
@@ -12,8 +11,7 @@ while True:
     if a!=-1 and b!=-1:
         jpg = bytes[a:b+2]
         bytes= bytes[b+2:]
-        frame = cv2.imdecode(np.fromstring(jpg, dtype=np.uint8),cv2.CV_LOAD_IMAGE_COLOR)
-        cv2.imshow("IP Camera",frame)
+        i = cv2.imdecode(np.fromstring(jpg, dtype=np.uint8),cv2.CV_LOAD_IMAGE_COLOR)
+        cv2.imshow('i',i)
         if cv2.waitKey(1) ==27:
-            exit(0)    
-
+            exit(0) 
