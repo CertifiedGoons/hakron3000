@@ -1,10 +1,11 @@
 
 function onload()
     spawnObject({["type"] = "Deck"})
-    findInRadiusBy({0,0,0}, 100, function(o) return o.tag=="Card" end, true)
+    findInRadiusBy({0,0,100}, 100000, function(o) return o.tag=="Card" end, true)
     cards = findInRadiusBy()
-    for k, v in pairs(arr) do
-        print(k)
+    for k, v in pairs(cards) do
+        print(k, v)
+    end
 end
 
 function findInRadiusBy(pos, radius, func, debug)
