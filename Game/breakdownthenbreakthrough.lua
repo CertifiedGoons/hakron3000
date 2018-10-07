@@ -111,10 +111,15 @@ function onload()
     hq = getObjectFromGUID(hq_guid)
     hk = getObjectFromGUID(hk_guid)
 
-    varParam = {}
-    varParam.position = {x=10, y=0, z=0}
-    varParam.collide = false
-    varParam.fast = false
-    varParam.flip = true
-    h2.setPositionSmooth(varParam)
+    h2.setPositionSmooth({10,0,0}, false, false)
+
+    cards = [{
+        "GUID": guid,
+        "point": 0,
+        ""
+    },
+    {
+
+    }]
+    cards[1].GUID
 end
