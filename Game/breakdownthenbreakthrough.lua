@@ -55,32 +55,66 @@ hq_guid = '48f518'
 hk_guid = 'bf7f43'
 
 function onload()
-    ca
-    c2
-    c3
-    c4
-    c5
-    c6
-    c7
-    c8
-    c9
-    c10
-    cj
-    cq
-    ck
+    ca = getObjectFromGUID(ca_guid)
+    c2 = getObjectFromGUID(c2_guid)
+    c3 = getObjectFromGUID(c3_guid)
+    c4 = getObjectFromGUID(c4_guid)
+    c5 = getObjectFromGUID(c5_guid)
+    c6 = getObjectFromGUID(c6_guid)
+    c7 = getObjectFromGUID(c7_guid)
+    c8 = getObjectFromGUID(c8_guid)
+    c9 = getObjectFromGUID(c9_guid)
+    c10 = getObjectFromGUID(c10_guid)
+    cj = getObjectFromGUID(cj_guid)
+    cq = getObjectFromGUID(cq_guid)
+    ck = getObjectFromGUID(ck_guid)
 
-    sa
-    s2
-    s3
-    s4
-    s5
-    s6
-    s7
-    s8
-    s9
-    s10
-    sj
-    sq
-    sk
+    sa = getObjectFromGUID(sa_guid)
+    s2 = getObjectFromGUID(s2_guid)
+    s3 = getObjectFromGUID(s3_guid)
+    s4 = getObjectFromGUID(s4_guid)
+    s5 = getObjectFromGUID(s5_guid)
+    s6 = getObjectFromGUID(s6_guid)
+    s7 = getObjectFromGUID(s7_guid)
+    s8 = getObjectFromGUID(s8_guid)
+    s9 = getObjectFromGUID(s9_guid)
+    s10 = getObjectFromGUID(s10_guid)
+    sj = getObjectFromGUID(sj_guid)
+    sq = getObjectFromGUID(sq_guid)
+    sk = getObjectFromGUID(sk_guid)
 
-    
+    da = getObjectFromGUID(da_guid)
+    d2 = getObjectFromGUID(d2_guid)
+    d3 = getObjectFromGUID(d3_guid)
+    d4 = getObjectFromGUID(d4_guid)
+    d5 = getObjectFromGUID(d5_guid)
+    d6 = getObjectFromGUID(d6_guid)
+    d7 = getObjectFromGUID(d7_guid)
+    d8 = getObjectFromGUID(d8_guid)
+    d9 = getObjectFromGUID(d9_guid)
+    d10 = getObjectFromGUID(d10_guid)
+    dj = getObjectFromGUID(dj_guid)
+    dq = getObjectFromGUID(dq_guid)
+    dk = getObjectFromGUID(dk_guid)
+
+    ha = getObjectFromGUID(ha_guid)
+    h2 = getObjectFromGUID(h2_guid)
+    h3 = getObjectFromGUID(h3_guid)
+    h4 = getObjectFromGUID(h4_guid)
+    h5 = getObjectFromGUID(h5_guid)
+    h6 = getObjectFromGUID(h6_guid)
+    h7 = getObjectFromGUID(h7_guid)
+    h8 = getObjectFromGUID(h8_guid)
+    h9 = getObjectFromGUID(h9_guid)
+    h10 = getObjectFromGUID(h10_guid)
+    hj = getObjectFromGUID(hj_guid)
+    hq = getObjectFromGUID(hq_guid)
+    hk = getObjectFromGUID(hk_guid)
+
+    varParam = {}
+    varParam.position = {x=10, y=0, z=0}
+    varParam.collide = false
+    varParam.fast = false
+    varParam.flip = true
+    h2.setPositionSmooth(varParam)
+end
