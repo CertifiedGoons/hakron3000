@@ -5,9 +5,6 @@ import numpy as np
 stream=urllib.urlopen('http://camera.accidentallycoded.com/video')
 bytes=''
 
-def displayFrame(frame):
-    cv2.imshow("IP Camera", frame)
-
 while True:
 
     # Get frame from video feed
@@ -20,10 +17,11 @@ while True:
         frame = cv2.imdecode(np.fromstring(jpg, dtype=np.uint8),cv2.CV_LOAD_IMAGE_COLOR)
         
         # Manipulate frame
-        gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        bw = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
         # Display frame to window
-        displayFrame(gray_frame)
+        image = bw
+        cv2.imshow("IP Camera", image)
 
         # Close on escape
         if cv2.waitKey(1) ==27:
