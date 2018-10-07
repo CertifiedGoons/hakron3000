@@ -1,0 +1,2721 @@
+{
+  "SaveName": "Game",
+  "GameMode": "Game",
+  "Gravity": 0.5,
+  "Date": "10/7/2018 1:17:13 AM",
+  "Table": "Table_RPG",
+  "Sky": "Sky_Museum",
+  "Note": "",
+  "Rules": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "LuaScript": "ca_guid = 'd63d07'\nc2_guid = '3e5ff5'\nc3_guid = 'c319d8'\nc4_guid = 'de7f69'\nc5_guid = 'a95f36'\nc6_guid = '107e63'\nc7_guid = 'fe34d1'\nc8_guid = '9d6a57'\nc9_guid = 'bd8cf2'\nc10_guid = '07fa6a'\ncj_guid = '4156b5'\ncq_guid = 'c8a9cc'\nck_guid = 'a0984d'\n\nsa_guid = 'cc9386'\ns2_guid = 'a81b8b'\ns3_guid = '6190dc'\ns4_guid = '54654f'\ns5_guid = '86e9c4'\ns6_guid = '4959d8'\ns7_guid = '40a55f'\ns8_guid = '3c415c'\ns9_guid = '46064a'\ns10_guid = '036fbf'\nsj_guid = 'cc1b28'\nsq_guid = '85e29b'\nsk_guid = '5ffd24'\n\nda_guid = '66c505'\nd2_guid = 'e2552a'\nd3_guid = '989e37'\nd4_guid = 'b319f1'\nd5_guid = 'd7fb8f'\nd6_guid = '70dfdf'\nd7_guid = 'cfbf60'\nd8_guid = '70af9c'\nd9_guid = '8a9c01'\nd10_guid = '39770b'\ndj_guid = '8ce2cb'\ndq_guid = '9b4ae6'\ndk_guid = '79ad4c'\n\nha_guid = 'f8a461'\nh2_guid = 'c5517e'\nh3_guid = 'd228b7'\nh4_guid = '4148ba'\nh5_guid = 'f08e8e'\nh6_guid = '1aa773'\nh7_guid = 'b3310f'\nh8_guid = '569a33'\nh9_guid = 'ab5c84'\nh10_guid = '52cba5'\nhj_guid = 'b3ff44'\nhq_guid = '48f518'\nhk_guid = 'bf7f43'\n\nfunction onload()\n    ca = getObjectFromGUID(ca_guid)\n    c2 = getObjectFromGUID(c2_guid)\n    c3 = getObjectFromGUID(c3_guid)\n    c4 = getObjectFromGUID(c4_guid)\n    c5 = getObjectFromGUID(c5_guid)\n    c6 = getObjectFromGUID(c6_guid)\n    c7 = getObjectFromGUID(c7_guid)\n    c8 = getObjectFromGUID(c8_guid)\n    c9 = getObjectFromGUID(c9_guid)\n    c10 = getObjectFromGUID(c10_guid)\n    cj = getObjectFromGUID(cj_guid)\n    cq = getObjectFromGUID(cq_guid)\n    ck = getObjectFromGUID(ck_guid)\n\n    sa = getObjectFromGUID(sa_guid)\n    s2 = getObjectFromGUID(s2_guid)\n    s3 = getObjectFromGUID(s3_guid)\n    s4 = getObjectFromGUID(s4_guid)\n    s5 = getObjectFromGUID(s5_guid)\n    s6 = getObjectFromGUID(s6_guid)\n    s7 = getObjectFromGUID(s7_guid)\n    s8 = getObjectFromGUID(s8_guid)\n    s9 = getObjectFromGUID(s9_guid)\n    s10 = getObjectFromGUID(s10_guid)\n    sj = getObjectFromGUID(sj_guid)\n    sq = getObjectFromGUID(sq_guid)\n    sk = getObjectFromGUID(sk_guid)\n\n    da = getObjectFromGUID(da_guid)\n    d2 = getObjectFromGUID(d2_guid)\n    d3 = getObjectFromGUID(d3_guid)\n    d4 = getObjectFromGUID(d4_guid)\n    d5 = getObjectFromGUID(d5_guid)\n    d6 = getObjectFromGUID(d6_guid)\n    d7 = getObjectFromGUID(d7_guid)\n    d8 = getObjectFromGUID(d8_guid)\n    d9 = getObjectFromGUID(d9_guid)\n    d10 = getObjectFromGUID(d10_guid)\n    dj = getObjectFromGUID(dj_guid)\n    dq = getObjectFromGUID(dq_guid)\n    dk = getObjectFromGUID(dk_guid)\n\n    ha = getObjectFromGUID(ha_guid)\n    h2 = getObjectFromGUID(h2_guid)\n    h3 = getObjectFromGUID(h3_guid)\n    h4 = getObjectFromGUID(h4_guid)\n    h5 = getObjectFromGUID(h5_guid)\n    h6 = getObjectFromGUID(h6_guid)\n    h7 = getObjectFromGUID(h7_guid)\n    h8 = getObjectFromGUID(h8_guid)\n    h9 = getObjectFromGUID(h9_guid)\n    h10 = getObjectFromGUID(h10_guid)\n    hj = getObjectFromGUID(hj_guid)\n    hq = getObjectFromGUID(hq_guid)\n    hk = getObjectFromGUID(hk_guid)\n\n    varParam = {}\n    varParam.position = {10, 0, 0}\n    varParam.collide = false\n    varParam.fast = false\n    varParam.flip = true\n    c5.setPositionSmooth({10,0,0}, false, false)\nend\n",
+  "LuaScriptState": "",
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0,
+    "HandTransforms": [
+      {
+        "Color": "Red",
+        "Transform": {
+          "posX": -15.1108065,
+          "posY": 4.83661366,
+          "posZ": -20.1076221,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 11.7723045,
+          "scaleY": 9.174497,
+          "scaleZ": 4.87123871
+        }
+      },
+      {
+        "Color": "Yellow",
+        "Transform": {
+          "posX": -30.2150211,
+          "posY": 4.83661366,
+          "posZ": 10.17524,
+          "rotX": 0.0,
+          "rotY": 90.0,
+          "rotZ": 0.0,
+          "scaleX": 11.6576071,
+          "scaleY": 9.174497,
+          "scaleZ": 4.921173
+        }
+      },
+      {
+        "Color": "Purple",
+        "Transform": {
+          "posX": 30.25128,
+          "posY": 4.83661366,
+          "posZ": 9.59069252,
+          "rotX": 0.0,
+          "rotY": 270.0,
+          "rotZ": 0.0,
+          "scaleX": 11.6576,
+          "scaleY": 9.174497,
+          "scaleZ": 4.921173
+        }
+      },
+      {
+        "Color": "Blue",
+        "Transform": {
+          "posX": 15.4749184,
+          "posY": 4.83661366,
+          "posZ": 19.8365288,
+          "rotX": 0.0,
+          "rotY": 179.8,
+          "rotZ": 0.0,
+          "scaleX": 11.774437,
+          "scaleY": 9.174497,
+          "scaleZ": 4.87251329
+        }
+      },
+      {
+        "Color": "White",
+        "Transform": {
+          "posX": 15.1961479,
+          "posY": 4.83661366,
+          "posZ": -20.1400986,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 11.7722921,
+          "scaleY": 9.17449951,
+          "scaleZ": 4.87123871
+        }
+      },
+      {
+        "Color": "Green",
+        "Transform": {
+          "posX": -15.1927767,
+          "posY": 4.83661366,
+          "posZ": 19.787817,
+          "rotX": 0.0,
+          "rotY": 180.0,
+          "rotZ": 0.0,
+          "scaleX": 11.7722921,
+          "scaleY": 9.174497,
+          "scaleZ": 4.87123871
+        }
+      },
+      {
+        "Color": "Pink",
+        "Transform": {
+          "posX": 30.10358,
+          "posY": 4.83661366,
+          "posZ": -8.449126,
+          "rotX": 0.0,
+          "rotY": 270.0,
+          "rotZ": 0.0,
+          "scaleX": 11.6575975,
+          "scaleY": 9.174497,
+          "scaleZ": 4.921173
+        }
+      },
+      {
+        "Color": "Orange",
+        "Transform": {
+          "posX": -30.247818,
+          "posY": 4.83661366,
+          "posZ": -8.822588,
+          "rotX": 0.0,
+          "rotY": 90.0,
+          "rotZ": 0.0,
+          "scaleX": 11.6576109,
+          "scaleY": 9.174497,
+          "scaleZ": 4.921173
+        }
+      }
+    ]
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "ObjectStates": [
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -22.0577,
+        "posY": 1.21447217,
+        "posZ": -15.5834637,
+        "rotX": 0.012246239,
+        "rotY": 180.016174,
+        "rotZ": 10.5701714,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 124,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "9d6a57"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -25.7002716,
+        "posY": 1.1087575,
+        "posZ": -15.1696,
+        "rotX": -0.00190153532,
+        "rotY": 180.061584,
+        "rotZ": 4.043866,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 100,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "3e5ff5"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -26.4224911,
+        "posY": 1.15611112,
+        "posZ": -11.9558821,
+        "rotX": 0.003380597,
+        "rotY": 180.037613,
+        "rotZ": 7.153569,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 139,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "cc9386"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -23.7894478,
+        "posY": 1.16051018,
+        "posZ": -11.8938913,
+        "rotX": 8.498425E-05,
+        "rotY": 180.063019,
+        "rotZ": 7.42152739,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 115,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "86e9c4"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -22.8522625,
+        "posY": 1.16058838,
+        "posZ": -4.39581,
+        "rotX": 0.00163985661,
+        "rotY": 180.155334,
+        "rotZ": 7.416558,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 118,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "1aa773"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -22.9284763,
+        "posY": 1.25003684,
+        "posZ": -7.976161,
+        "rotX": 0.008960995,
+        "rotY": 178.557724,
+        "rotZ": 10.9522266,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 121,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "cfbf60"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -26.523632,
+        "posY": 1.03235,
+        "posZ": -7.982233,
+        "rotX": 0.0179511,
+        "rotY": 358.580261,
+        "rotZ": 359.983643,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 137,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "66c505"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -24.132555,
+        "posY": 1.21345234,
+        "posZ": -7.95355463,
+        "rotX": 0.00390898949,
+        "rotY": 358.645081,
+        "rotZ": 349.555023,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 113,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d7fb8f"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -24.2472038,
+        "posY": 1.16050851,
+        "posZ": -4.188511,
+        "rotX": 0.0006541199,
+        "rotY": 180.112625,
+        "rotZ": 7.404982,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 110,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "4148ba"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -22.8012562,
+        "posY": 1.160427,
+        "posZ": -11.8917894,
+        "rotX": 0.000377030869,
+        "rotY": 180.0077,
+        "rotZ": 7.41871262,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 119,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "4959d8"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -21.0298824,
+        "posY": 1.16052449,
+        "posZ": -4.396846,
+        "rotX": 0.0004321662,
+        "rotY": 180.112274,
+        "rotZ": 7.43323755,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 130,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "ab5c84"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -20.9454956,
+        "posY": 1.56995642,
+        "posZ": -15.518218,
+        "rotX": 359.956451,
+        "rotY": 180.46077,
+        "rotZ": 11.2218838,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 132,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "07fa6a"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -22.08757,
+        "posY": 1.23476017,
+        "posZ": -8.001028,
+        "rotX": 0.009105722,
+        "rotY": 178.5542,
+        "rotZ": 10.9522285,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 125,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "70af9c"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -25.6176167,
+        "posY": 1.15854466,
+        "posZ": -11.85243,
+        "rotX": 0.0016353745,
+        "rotY": 180.024155,
+        "rotZ": 7.22161865,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 103,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "a81b8b"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -10.1563721,
+        "posY": 1.03171349,
+        "posZ": -11.975462,
+        "rotX": -1.4417E-06,
+        "rotY": 180.014572,
+        "rotZ": 8.10265931E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 147,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "5ffd24"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -26.16047,
+        "posY": 1.15393054,
+        "posZ": -4.11235142,
+        "rotX": 0.00283656339,
+        "rotY": 179.883163,
+        "rotZ": 7.02088451,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 138,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f8a461"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -23.3100681,
+        "posY": 1.15826023,
+        "posZ": -15.5610619,
+        "rotX": 359.972443,
+        "rotY": 180.1476,
+        "rotZ": 4.2941103,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 116,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "107e63"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": 9.999965,
+        "posY": 1.03171349,
+        "posZ": 6.43265048E-06,
+        "rotX": 1.26997051E-07,
+        "rotY": 180.010727,
+        "rotZ": -5.949165E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 112,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "a95f36"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -21.69471,
+        "posY": 1.16057742,
+        "posZ": -4.497794,
+        "rotX": 0.000345310167,
+        "rotY": 180.071945,
+        "rotZ": 7.42256737,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 126,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "569a33"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -22.8471031,
+        "posY": 1.66963875,
+        "posZ": -15.5692158,
+        "rotX": 359.873749,
+        "rotY": 179.468735,
+        "rotZ": 340.724243,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 120,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "fe34d1"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -24.9349289,
+        "posY": 1.16017425,
+        "posZ": -4.236051,
+        "rotX": 0.003318366,
+        "rotY": 180.0056,
+        "rotZ": 7.25572,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 106,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d228b7"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -18.8921585,
+        "posY": 1.26010919,
+        "posZ": -8.05769,
+        "rotX": 359.8976,
+        "rotY": 179.39566,
+        "rotZ": 11.719717,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 145,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "79ad4c"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -20.9770126,
+        "posY": 1.22237158,
+        "posZ": -8.027245,
+        "rotX": 0.00557997124,
+        "rotY": 178.637985,
+        "rotZ": 10.8082113,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 133,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "39770b"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -25.8605957,
+        "posY": 1.09932518,
+        "posZ": -8.007251,
+        "rotX": 0.00623128563,
+        "rotY": 178.43158,
+        "rotZ": 0.20673655,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 101,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "e2552a"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -12.4431705,
+        "posY": 1.03171349,
+        "posZ": -11.4181471,
+        "rotX": 1.48107245E-06,
+        "rotY": 180.019714,
+        "rotZ": -2.04689877E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 151,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "85e29b"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -18.24093,
+        "posY": 1.03171349,
+        "posZ": -0.787416935,
+        "rotX": 1.23615655E-06,
+        "rotY": 179.9456,
+        "rotZ": 9.005169E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 105,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "989e37"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -22.3189754,
+        "posY": 1.16054142,
+        "posZ": -4.393291,
+        "rotX": 9.67917949E-05,
+        "rotY": 180.033981,
+        "rotZ": 7.425938,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 122,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "b3310f"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -19.6929626,
+        "posY": 1.23551488,
+        "posZ": -8.065828,
+        "rotX": 359.896362,
+        "rotY": 179.430389,
+        "rotZ": 11.7222147,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 149,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "9b4ae6"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -20.404808,
+        "posY": 1.21650934,
+        "posZ": -8.019707,
+        "rotX": 0.00475043664,
+        "rotY": 178.6173,
+        "rotZ": 10.699048,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 141,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "8ce2cb"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -18.5921173,
+        "posY": 1.16054952,
+        "posZ": -4.560167,
+        "rotX": 0.00135436933,
+        "rotY": 180.07959,
+        "rotZ": 7.425988,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 146,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "bf7f43"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -19.22127,
+        "posY": 1.16054332,
+        "posZ": -4.59555244,
+        "rotX": 0.00142002024,
+        "rotY": 180.088913,
+        "rotZ": 7.42652035,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 150,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "48f518"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -19.8516026,
+        "posY": 1.16053629,
+        "posZ": -4.543793,
+        "rotX": 0.0011446136,
+        "rotY": 180.100876,
+        "rotZ": 7.426082,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 142,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "b3ff44"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -20.4822636,
+        "posY": 1.16054559,
+        "posZ": -4.45527267,
+        "rotX": 0.0008659691,
+        "rotY": 180.116974,
+        "rotZ": 7.43442345,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 134,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "52cba5"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -21.4490852,
+        "posY": 1.48151231,
+        "posZ": -15.5108137,
+        "rotX": 0.07173284,
+        "rotY": 180.054321,
+        "rotZ": 10.9109421,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 128,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "bd8cf2"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -24.98697,
+        "posY": 1.10574675,
+        "posZ": -15.1046715,
+        "rotX": 0.0100229476,
+        "rotY": 179.892441,
+        "rotZ": 4.29667854,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 104,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "c319d8"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -21.5308247,
+        "posY": 1.2280699,
+        "posZ": -8.014796,
+        "rotX": 0.00786012,
+        "rotY": 178.581146,
+        "rotZ": 10.8082161,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 129,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "8a9c01"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -23.557478,
+        "posY": 1.25676954,
+        "posZ": -7.98814058,
+        "rotX": 0.00368847558,
+        "rotY": 178.592575,
+        "rotZ": 10.87184,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 117,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "70dfdf"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -24.7194748,
+        "posY": 1.21832144,
+        "posZ": -7.93993235,
+        "rotX": 359.969971,
+        "rotY": 178.59671,
+        "rotZ": 10.4914055,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 109,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "b319f1"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -19.0524082,
+        "posY": 1.22678506,
+        "posZ": -15.4718962,
+        "rotX": 359.96994,
+        "rotY": 180.479,
+        "rotZ": 11.2518587,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 144,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "a0984d"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -19.70306,
+        "posY": 1.30478311,
+        "posZ": -15.5198612,
+        "rotX": 359.9499,
+        "rotY": 180.3371,
+        "rotZ": 11.2529211,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 148,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "c8a9cc"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -24.3289623,
+        "posY": 1.16036618,
+        "posZ": -11.8455114,
+        "rotX": -0.00127439236,
+        "rotY": 180.005341,
+        "rotZ": 7.41245365,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 111,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "54654f"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -23.6243,
+        "posY": 1.16070449,
+        "posZ": -4.283429,
+        "rotX": -0.00188567664,
+        "rotY": 180.1222,
+        "rotZ": 7.43220663,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 114,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f08e8e"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -21.5557232,
+        "posY": 1.16029489,
+        "posZ": -11.7676029,
+        "rotX": 0.0009977475,
+        "rotY": 180.029449,
+        "rotZ": 7.41073847,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 127,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "3c415c"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -24.9676514,
+        "posY": 1.15990424,
+        "posZ": -11.8821707,
+        "rotX": 0.0007685713,
+        "rotY": 179.968018,
+        "rotZ": 7.376969,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 107,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "6190dc"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -20.343214,
+        "posY": 1.41662681,
+        "posZ": -15.4992723,
+        "rotX": 359.963379,
+        "rotY": 180.530365,
+        "rotZ": 11.2716446,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 140,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "4156b5"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -25.609333,
+        "posY": 1.157672,
+        "posZ": -4.18455744,
+        "rotX": 0.00100753014,
+        "rotY": 179.981567,
+        "rotZ": 7.24084,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 102,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "c5517e"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -24.4238129,
+        "posY": 1.11398149,
+        "posZ": -15.2429914,
+        "rotX": -0.00103238947,
+        "rotY": 179.968811,
+        "rotZ": 4.266399,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 108,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "de7f69"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -22.23176,
+        "posY": 1.16058207,
+        "posZ": -11.8671551,
+        "rotX": 4.3392276E-05,
+        "rotY": 180.008972,
+        "rotZ": 7.427825,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 123,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "40a55f"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -26.2979336,
+        "posY": 1.10126662,
+        "posZ": -15.1498384,
+        "rotX": 0.00767185353,
+        "rotY": 0.170223236,
+        "rotZ": 356.0411,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 136,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d63d07"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -14.6419325,
+        "posY": 1.03171349,
+        "posZ": -11.3573122,
+        "rotX": -8.22228742E-07,
+        "rotY": 180.002991,
+        "rotZ": -1.16434855E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 143,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "cc1b28"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -17.0623665,
+        "posY": 1.03171349,
+        "posZ": -11.54824,
+        "rotX": -8.306934E-07,
+        "rotY": 179.978683,
+        "rotZ": 4.0623096E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 135,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "036fbf"
+    },
+    {
+      "Name": "Card",
+      "Transform": {
+        "posX": -19.4262028,
+        "posY": 1.03171349,
+        "posZ": -11.6360588,
+        "rotX": -1.50494E-07,
+        "rotY": 180.009781,
+        "rotZ": 1.21625E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "ColorDiffuse": {
+        "r": 0.713235259,
+        "g": 0.713235259,
+        "b": 0.713235259
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": true,
+      "Hands": true,
+      "CardID": 131,
+      "SidewaysCard": false,
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "file:////home/whaleboye/Downloads/Deck.png",
+          "BackURL": "file:////home/whaleboye/Downloads/CardBack.png",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": false,
+          "UniqueBack": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "46064a"
+    }
+  ],
+  "DecalPallet": [],
+  "TabStates": {
+    "0": {
+      "title": "Rules",
+      "body": "",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "White",
+      "body": "",
+      "color": "White",
+      "visibleColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "id": 1
+    },
+    "2": {
+      "title": "Brown",
+      "body": "",
+      "color": "Brown",
+      "visibleColor": {
+        "r": 0.443,
+        "g": 0.231,
+        "b": 0.09
+      },
+      "id": 2
+    },
+    "3": {
+      "title": "Red",
+      "body": "",
+      "color": "Red",
+      "visibleColor": {
+        "r": 0.856,
+        "g": 0.1,
+        "b": 0.094
+      },
+      "id": 3
+    },
+    "4": {
+      "title": "Orange",
+      "body": "",
+      "color": "Orange",
+      "visibleColor": {
+        "r": 0.956,
+        "g": 0.392,
+        "b": 0.113
+      },
+      "id": 4
+    },
+    "5": {
+      "title": "Yellow",
+      "body": "",
+      "color": "Yellow",
+      "visibleColor": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.172
+      },
+      "id": 5
+    },
+    "6": {
+      "title": "Green",
+      "body": "",
+      "color": "Green",
+      "visibleColor": {
+        "r": 0.192,
+        "g": 0.701,
+        "b": 0.168
+      },
+      "id": 6
+    },
+    "7": {
+      "title": "Blue",
+      "body": "",
+      "color": "Blue",
+      "visibleColor": {
+        "r": 0.118,
+        "g": 0.53,
+        "b": 1.0
+      },
+      "id": 7
+    },
+    "8": {
+      "title": "Teal",
+      "body": "",
+      "color": "Teal",
+      "visibleColor": {
+        "r": 0.129,
+        "g": 0.694,
+        "b": 0.607
+      },
+      "id": 8
+    },
+    "9": {
+      "title": "Purple",
+      "body": "",
+      "color": "Purple",
+      "visibleColor": {
+        "r": 0.627,
+        "g": 0.125,
+        "b": 0.941
+      },
+      "id": 9
+    },
+    "10": {
+      "title": "Pink",
+      "body": "",
+      "color": "Pink",
+      "visibleColor": {
+        "r": 0.96,
+        "g": 0.439,
+        "b": 0.807
+      },
+      "id": 10
+    },
+    "11": {
+      "title": "Black",
+      "body": "",
+      "color": "Black",
+      "visibleColor": {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25
+      },
+      "id": 11
+    }
+  },
+  "VersionNumber": "v10.9.3"
+}
